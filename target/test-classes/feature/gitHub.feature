@@ -1,7 +1,7 @@
 Feature: Git Hub Challenges
 
 Background: User is LoggedIn
-	When User is loggedIn with "kvjpluto" and "Git@2020"
+	When User is loggedIn with "YourUserName" and "YourPassword"
 	
 Scenario Outline: Verify Repository is successfully created
 	When User creates repository "<repository_name>" "<access>"
@@ -15,4 +15,4 @@ Scenario Outline: Verify Repository is successfully created
 	
 Examples:
 	|repository_name	|access	|issue_title	|issue_desc|comment	|
-	|test	|public|test	|testing|comment on issue|
+	|test				|public	|test			|testing	|comment on issue|
